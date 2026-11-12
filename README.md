@@ -19,7 +19,7 @@ as RingQt, so your applications don't change.
 
 ## Ring2EXE
 
-The package installs its own Ring2EXE library files (separate from the RingQt files, so both can exist)
+The package installs its own Ring2EXE library files
 
 * `tools/ring2exe/libs/qt6.ring` - Option `-qt6` (RingQt6 - guilib.ring)
 * `tools/ring2exe/libs/qt6lightguilib.ring` - Option `-qt6lightguilib` (RingQt6 - lightguilib.ring)
