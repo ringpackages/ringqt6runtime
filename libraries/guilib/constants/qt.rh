@@ -1,0 +1,425 @@
+Qt_AlignLeft 		= 1
+Qt_AlignRight 		= 2
+Qt_AlignHCenter 	= 4
+Qt_AlignJustify 	= 8
+Qt_AlignTop 		= 0x20
+Qt_AlignBottom 		= 0x40
+Qt_AlignVCenter 	= 0x80
+
+QMessageBox_Ok 			= 0x00000400	 
+QMessageBox_Open 		= 0x00002000 
+QMessageBox_Save 		= 0x00000800 
+QMessageBox_Cancel 		= 0x00400000 
+QMessageBox_Close 		= 0x00200000 
+QMessageBox_Discard 		= 0x00800000 
+QMessageBox_Apply 		= 0x02000000 
+QMessageBox_Reset 		= 0x04000000 
+QMessageBox_RestoreDefaults 	= 0x08000000	 
+QMessageBox_Help 		= 0x01000000
+QMessageBox_SaveAll 		= 0x00001000 
+QMessageBox_Yes			= 0x00004000 
+QMessageBox_YesToAll 		= 0x00008000 
+QMessageBox_No 			= 0x00010000	 
+QMessageBox_NoToAll 		= 0x00020000 
+QMessageBox_Abort 		= 0x00040000 
+QMessageBox_Retry 		= 0x00080000 
+QMessageBox_Ignore 		= 0x00100000 
+QMessageBox_NoButton 		= 0x00000000 
+
+Qt_Widget 		= 0
+Qt_Window 		= 1
+Qt_dialog 		= 2 | Qt_Window
+Qt_sheet 		= 4 | Qt_Window
+Qt_Drawer 		= Qt_sheet | Qt_Dialog
+Qt_popup 		= 8 | Qt_Window
+Qt_Tool 		= Qt_popup | Qt_Dialog
+Qt_ToolTip 		= Qt_Popup | Qt_Sheet
+Qt_SplashScreen 	= Qt_ToolTip | Qt_Dialog
+Qt_Desktop 		= 0x10 | Qt_Window
+Qt_SubWindow 		= 0x12 
+Qt_ForeignWindow 	= 0x20 | Qt_Window
+Qt_CoverWindow 		= 0x40 | Qt_Window
+
+Qt_CustomizeWindowHint 		= 0x2000000
+Qt_WindowTitleHint  		= 0x1000
+Qt_WindowSystemMenuHint  	= 0x2000
+Qt_WindowMinimizeButtonHint  	= 0x4000
+Qt_WindowMaximizeButtonHint  	= 0x8000
+Qt_WindowMinMaxButtonsHint 	= Qt_WindowMinimizeButtonHint | Qt_WindowMaximizeButtonHint 
+Qt_WindowCloseButtonHint  	= 0x8000000
+Qt_WindowContextHelpButtonHint  = 0x10000
+Qt_MacWindowToolBarButtonHint  	= 0x10000000
+Qt_WindowFullscreenButtonHint  	= 0x80000000
+Qt_BypassGraphicsProxyWidget 	= 0x20000000
+Qt_WindowShadeButtonHint 	= 0x20000
+Qt_WindowStaysOnTopHint 	= 0x40000
+Qt_WindowStaysOnBottomHint 	= 0x4000000
+Qt_windowOkButtonHint 		= 0x80000
+Qt_WindowCancelButtonHint 	= 0x100000
+Qt_WindowTransparentForInput 	= 0x80000
+Qt_WindowOverridesSystemGestures 	= 0x100000
+Qt_WindowDoesNotAcceptFocus 		= 0x200000
+Qt_MaximizeUsingFullscreenGeometryHint 	= 0x400000
+Qt_WindowType_Mask 			= 0xff
+
+Qt_Unchecked 		= 0
+Qt_PartiallyChecked 	= 1
+Qt_Checked 		= 2
+
+
+QDockWidget_DocWidgetClosable 		= 1
+QDockWidget_DockWidgetMovable 		= 2
+QDockWidget_DockWidgetFloatable 	= 4
+QDockWidget_DockWidgetVerticalTitleBar 	= 8
+QDockWidget_AllDockWidgetFeatures 	= QDockWidget_DocWidgetClosable | QDockWidget_DockWidgetMovable | QDockWidget_DockWidgetFloatable
+QDockWidget_NoDockWidgetFeatures 	= 0
+
+QTextEdit_NoWrap 		= 0
+QTextEdit_WidgetWidth 		= 1
+QTextEdit_FixedPixelWidth 	= 2
+QTextEdit_FixedColumnWidth 	= 3
+
+Qt_LeftDockWidgetArea 	= 1
+Qt_RightDockWidgetArea 	= 2
+Qt_TopDockWidgetArea 	= 4
+Qt_BottomDockWidgetArea = 8
+Qt_NoDockWidgetArea 	= 0
+
+Qt_Horizontal 		= 1
+Qt_Vertical 		= 2
+
+QAbstractItemView_SelectItems 	= 0
+QAbstractItemView_SelectRows 	= 1
+QAbstractItemView_SelectColumns = 2
+
+QFrame_Plain 	= 0x10
+QFrame_Raised 	= 0x20
+QFrame_Sunken 	= 0x30
+
+QFrame_NoFrame 		= 0
+QFrame_Box 		= 1
+QFrame_Panel 		= 2
+QFrame_StyledPanel 	= 6
+QFrame_HLine 		= 4
+QFrame_VLine 		= 5
+QFrame_WinPanel 	= 3
+
+Qt_WA_AcceptDrops 		= 78
+Qt_WA_AlwaysShowToolTips 	= 84
+Qt_WA_ContentsPropagated 	= 3
+Qt_WA_CustomWhatsThis 		= 74
+Qt_WA_DeleteOnClose 		= 55
+Qt_WA_Disabled 			= 0
+Qt_WA_DontShowOnScreen 		= 103
+Qt_WA_ForceDisabled 		= 32
+Qt_WA_ForceUpdatesDisabled 	= 59
+Qt_WA_GroupLeader 		= 72
+Qt_WA_Hover 			= 74
+Qt_WA_InputMethodEnabled 	= 14
+Qt_WA_KeyboardFocusChange 	= 77
+Qt_WA_KeyCompression 		= 33
+Qt_WA_LayoutOnEntireRect 	= 48
+Qt_WA_LayoutUsesWidgetRect 	= 92
+Qt_WA_MacNoClickThrough 	= 12
+Qt_WA_MacOpaqueSizeGrip 	= 85
+Qt_WA_MacShowFocusRect 		= 88
+Qt_WA_MacNormalSize 		= 89
+Qt_WA_MacSmallSize 		= 90
+Qt_WA_MacMiniSize 		= 91
+Qt_WA_MacVariableSize 		= 102
+Qt_WA_MacBrushedMetal 		= 46
+Qt_WA_Mapped 			= 11
+Qt_WA_MouseNoMask 		= 71
+Qt_WA_MouseTracking 		= 2
+Qt_WA_Moved 			= 43
+Qt_WA_MSWindowsUseDirect3D 	= 94
+Qt_WA_NoChildEventsForParent 	= 58
+Qt_WA_NoChildEventsFromChildren = 39
+Qt_WA_NoMouseReplay 		= 54
+Qt_WA_NoMousePropagation 	= 73
+Qt_WA_TransparentForMouseEvents = 51
+Qt_WA_NoSystemBackground 	= 9
+Qt_WA_OpaquePaintEvent 		= 4
+Qt_WA_OutsideWSRange 		= 49
+Qt_WA_PaintOnScreen 		= 8
+Qt_WA_PaintUnclipped 		= 52
+Qt_WA_PendingMoveEvent 		= 34
+Qt_WA_PendingResizeEvent 	= 35
+Qt_WA_QuitOnClose 		= 76
+Qt_WA_Resized 			= 42
+Qt_WA_RightToLeft 		= 56
+Qt_WA_SetCursor 		= 38
+Qt_WA_SetFont 			= 37
+Qt_WA_SetPalette 		= 36
+Qt_WA_SetStyle 			= 86
+Qt_WA_ShowModal 		= 70
+Qt_WA_StaticContents 		= 5
+Qt_WA_StyleSheet 		= 97
+Qt_WA_TranslucentBackground 	= 120
+Qt_WA_UnderMouse 		= 1
+Qt_WA_UpdatesDisabled 		= 10
+Qt_WA_WindowModified 		= 41
+Qt_WA_WindowPropagation 	= 80
+Qt_WA_MacAlwaysShowToolWindow 	= 96
+Qt_WA_SetLocale 		= 87
+Qt_WA_StyledBackground 		= 93
+Qt_WA_ShowWithoutActivating 	= 98
+Qt_WA_NativeWindow 		= 100
+Qt_WA_DontCreateNativeAncestors = 101
+Qt_WA_X11NetWmWindowTypeDesktop = 104
+Qt_WA_X11NetWmWindowTypeDock 	= 105
+Qt_WA_X11NetWmWindowTypeToolBar = 106
+Qt_WA_X11NetWmWindowTypeMenu 	= 107
+Qt_WA_X11NetWmWindowTypeUtility = 108
+Qt_WA_X11NetWmWindowTypeSplash 	= 109
+Qt_WA_X11NetWmWindowTypeDialog 	= 110
+Qt_WA_X11NetWmWindowTypeDropDownMenu 	= 111
+Qt_WA_X11NetWmWindowTypePopupMenu 	= 112
+Qt_WA_X11NetWmWindowTypeToolTip 	= 113
+Qt_WA_X11NetWmWindowTypeNotification 	= 114
+Qt_WA_X11NetWmWindowTypeCombo 		= 115
+Qt_WA_X11NetWmWindowTypeDND 		= 116
+Qt_WA_MacFrameworkScaled 		= 117
+Qt_WA_AcceptTouchEvents 		= 121
+Qt_WA_TouchPadAcceptSingleTouchEvents 	= 123
+Qt_WA_X11DoNotAcceptFocus 		= 126
+Qt_WA_AlwaysStackOnTop 			= 128
+
+QCompleter_PopupCompletion 		= 0
+QCompleter_InlineCompletion 		= 2
+QCompleter_UnfilteredPopupCompletion 	= 1
+
+QCompleter_UnsortedModel 		= 0
+QCompleter_CaseSensitivelySortedModel 	= 1
+QCompleter_CaseInsensitivelySortedModel = 2
+
+Qt_CaseInsensitive	= 0
+Qt_CaseSensitive	= 1
+
+QString_KeepEmptyParts	= 0
+QString_SkipEmptyParts	= 1
+
+QProcess_NormalExit 		= 0
+QProcess_CrashExit 		= 1
+QProcess_ManagedInputChannel 	= 0
+QProcess_ForwardedInputChannel 	= 1
+QProcess_StandardOutput 	= 0
+QProcess_StandardError 		= 1
+QProcess_SeparateChannels 	= 0
+QProcess_MergedChannels 	= 1
+QProcess_ForwardedChannels 	= 1
+QProcess_ForwardedErrorChannel 	= 4
+QProcess_ForwardedOutputChannel = 6
+
+QProcess_FailedToStart 	= 0
+QProcess_Crashed 	= 1
+QProcess_Timedout 	= 2
+QProcess_WriteError 	= 4
+QProcess_ReadError 	= 3
+QProcess_UnknownError 	= 5
+QProcess_NotRunning 	= 0
+QProcess_Starting 	= 1
+QProcess_Running 	= 2
+
+QIODevice_NotOpen 	= 0
+QIODevice_ReadOnly 	= 1
+QIODevice_WriteOnly 	= 2
+QIODevice_ReadWrite 	= QIODevice_ReadOnly | QIODevice_WriteOnly
+QIODevice_Append 	= 4
+QIODevice_Truncate 	= 8
+QIODevice_Text 		= 0x10
+QIODevice_Unbuffered 	= 0x20
+
+Qt_ScrollBarAsNeeded 	= 0
+Qt_ScrollBarAlwaysOff 	= 1
+Qt_ScrollBarAlwaysOn 	= 2
+
+Qt_ArrowCursor		=	0	  
+Qt_UpArrowCursor 	=	1
+Qt_CrossCursor		= 	2	  
+Qt_WaitCursor 	 	=	3
+Qt_IBeamCursor		=	4 
+Qt_SizeVerCursor	=	5
+Qt_SizeHorCursor	=	6
+Qt_SizeBDiagCursor	=	7
+Qt_SizeFDiagCursor	=	8
+Qt_SizeAllCursor	=	9
+Qt_BlankCursor		=	10	
+Qt_SplitVCursor		=	11
+Qt_SplitHCursor		=	12
+Qt_PointingHandCursor	=	13
+Qt_ForbiddenCursor	=	14
+Qt_OpenHandCursor	=	17
+Qt_ClosedHandCursor	=	18
+Qt_WhatsThisCursor	=	15
+Qt_BusyCursor		=	16	 
+Qt_DragMoveCursor	=	20
+Qt_DragCopyCursor	=	19
+Qt_DragLinkCursor	=	21
+Qt_BitmapCursor		=	24	
+
+
+Qt_Key_Escape 	= 0x1000000	 
+Qt_Key_Tab 	= 0x1000001	 
+Qt_Key_Backtab  = 0x1000002	 
+Qt_Key_Backspace= 0x1000003 
+Qt_Key_Return 	= 0x1000004
+Qt_Key_Enter  	= 0x1000005
+Qt_Key_Insert 	= 0x1000006	 
+Qt_Key_Delete 	= 0x1000007	 
+Qt_Key_Pause  	= 0x1000008
+
+Qt_Key_Print	= 0x01000009
+Qt_Key_SysReq	= 0x0100000a
+Qt_Key_Clear	= 0x0100000b	 
+Qt_Key_Home	= 0x01000010
+Qt_Key_End	= 0x01000011
+Qt_Key_Left	= 0x01000012
+Qt_Key_Up	= 0x01000013
+Qt_Key_Right	= 0x01000014
+Qt_Key_Down	= 0x01000015
+Qt_Key_PageUp	= 0x01000016
+Qt_Key_PageDown	= 0x01000017
+Qt_Key_Shift	= 0x01000020
+Qt_Key_Control	= 0x01000021
+
+Qt_Key_A = 0x41	 
+Qt_Key_B = 0x42	 
+Qt_Key_C = 0x43	 
+Qt_Key_D = 0x44	 
+Qt_Key_E = 0x45	 
+Qt_Key_F = 0x46	 
+Qt_Key_G = 0x47	 
+Qt_Key_H = 0x48	 
+Qt_Key_I = 0x49	 
+Qt_Key_J = 0x4a	 
+Qt_Key_K = 0x4b	 
+Qt_Key_L = 0x4c	 
+Qt_Key_M = 0x4d	 
+Qt_Key_N = 0x4e	 
+Qt_Key_O = 0x4f	 
+Qt_Key_P = 0x50	 
+Qt_Key_Q = 0x51	 
+Qt_Key_R = 0x52	 
+Qt_Key_S = 0x53	 
+Qt_Key_T = 0x54	 
+Qt_Key_U = 0x55	 
+Qt_Key_V = 0x56	 
+Qt_Key_W = 0x57	 
+Qt_Key_X = 0x58	 
+Qt_Key_Y = 0x59	 
+Qt_Key_Z = 0x5a	 
+
+
+QAbstractItemView_SingleSelection 	= 1
+QAbstractItemView_ContiguousSelection 	= 4
+QAbstractItemView_ExtendedSelection 	= 3
+QAbstractItemView_MultiSelection 	= 2
+QAbstractItemView_NoSelection 		= 0
+
+Qt_WA_TransparentForMouseEvents = 51
+
+QItemSelectionModel_NoUpdate 		= 0
+QItemSelectionModel_Clear 		= 1
+QItemSelectionModel_Select 		= 2
+QItemSelectionModel_Deselect 		= 4
+QItemSelectionModel_Toggle 		= 8
+QItemSelectionModel_Current 		= 0x10
+QItemSelectionModel_Rows 		= 0x20
+QItemSelectionModel_Columns 		= 0x40
+QItemSelectionModel_SelectCurrent 	= QItemSelectionModel_Select | QItemSelectionModel_Current
+QItemSelectionModel_ToggleCurrent 	= QItemSelectionModel_Toggle |  QItemSelectionModel_Current
+QItemSelectionModel_ClearAndSelect 	= QItemSelectionModel_Clear | QItemSelectionModel_Select
+
+QAbstractItemView_NoEditTriggers 	= 0
+QAbstractItemView_CurrentChanged 	= 1
+QAbstractItemView_DoubleClicked 	= 2
+QAbstractItemView_SelectedClicked 	= 4
+QAbstractItemView_EditKeyPressed 	= 8
+QAbstractItemView_AnyKeyPressed 	= 16
+QAbstractItemView_AllEditTriggers 	= 31
+
+QSizePolicy_GrowFlag 		= 1
+QSizePolicy_ExpandFlag 		= 2
+QSizePolicy_ShrinkFlag 		= 4
+QSizePolicy_IgnoreFlag 		= 8
+QSizePolicy_Fixed		= 0
+QSizePolicy_Minimum		= QSizePolicy_GrowFlag
+QSizePolicy_Maximum		= QSizePolicy_ShrinkFlag
+QSizePolicy_Preferred		= QSizePolicy_GrowFlag | QSizePolicy_ShrinkFlag
+QSizePolicy_Expanding		= QSizePolicy_GrowFlag | QSizePolicy_ShrinkFlag | QSizePolicy_ExpandFlag
+QSizePolicy_MinimumExpanding 	= QSizePolicy_GrowFlag | QSizePolicy_ExpandFlag
+QSizePolicy_Ignored		= QSizePolicy_ShrinkFlag | QSizePolicy_GrowFlag | QSizePolicy_IgnoreFlag
+
+QTextCursor_MoveAnchor	= 0
+QTextCursor_KeepAnchor  = 1
+
+QFileDialog_LookIn	= 0
+QFileDialog_FileName    = 1
+QFileDialog_FileType    = 2
+QFileDialog_Accept      = 3
+QFileDialog_Reject      = 4
+
+QFileDialog_AcceptOpen  = 0
+QFileDialog_AcceptSave	= 1
+
+QFileDialog_AnyFile	  = 0
+QFileDialog_ExistingFile  = 1
+QFileDialog_Directory	  = 2
+QFileDialog_ExistingFiles = 3
+QFileDialog_DirectoryOnly = 4
+
+QFileDialog_ShowDirsOnly		=	0x00000001
+QFileDialog_DontResolveSymlinks		=	0x00000002
+QFileDialog_DontConfirmOverwrite	=	0x00000004
+QFileDialog_DontUseNativeDialog		=	0x00000010
+
+QFileDialog_ReadOnly			=	0x00000020
+QFileDialog_HideNameFilterDetails	=	0x00000040
+QFileDialog_DontUseSheet		=	0x00000008
+QFileDialog_DontUseCustomDirectoryIcons	=	0x00000080
+
+QFileDialog_Detail	= 0
+QFileDialog_List	= 1
+
+QDir_Dirs		=	0x001
+QDir_AllDirs		=	0x400
+QDir_Files		=	0x002
+QDir_Drives		=	0x004
+QDir_NoSymLinks		=	0x008
+QDir_NoDot		=	0x2000
+QDir_NoDotDot		=	0x4000
+QDir_NoDotAndDotDot	=	QDir_NoDot | QDir_NoDotDot
+QDir_AllEntries		=	QDir_Dirs | QDir_Files | QDir_Drives	
+QDir_Readable		=	0x010	
+QDir_Writable		=	0x020	
+QDir_Executable		=	0x040
+QDir_Modified		=	0x080
+QDir_Hidden		=	0x100
+QDir_System		=	0x200
+QDir_CaseSensitive	=	0x800
+
+QMessageBox_NoIcon	= 0
+QMessageBox_Question	= 4
+QMessageBox_Information	= 1
+QMessageBox_Warning	= 2
+QMessageBox_Critical	= 3
+
+Qt_LeftToolBarArea  	= 0x1
+Qt_RightToolBarArea 	= 0x2
+Qt_TopToolBarArea   	= 0x4
+Qt_BottomToolBarArea	= 0x8
+Qt_AllToolBarAreas	= Qt_LeftToolBarArea | Qt_RightToolBarArea | Qt_TopToolBarArea | Qt_BottomToolBarArea
+Qt_NoToolBarArea	= 0
+
+
+Qt_NoItemFlags		= 0	
+Qt_ItemIsSelectable	= 1	
+Qt_ItemIsEditable	= 2	
+Qt_ItemIsDragEnabled	= 4	
+Qt_ItemIsDropEnabled	= 8	
+Qt_ItemIsUserCheckable	= 16	
+Qt_ItemIsEnabled	= 32	
+Qt_ItemIsAutoTristate	= 64	
+Qt_ItemNeverHasChildren	= 128	
+Qt_ItemIsUserTristate	= 256	

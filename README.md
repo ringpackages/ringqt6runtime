@@ -26,3 +26,4 @@ The package installs its own Ring2EXE library files
 * `tools/ring2exe/libs/qt6core.ring` - Option `-qt6core` (RingQt6 - qtcore.ring)
 
 Example: `ring2exe myapp.ring -dist -qt6`
+
