@@ -1,8 +1,7 @@
 # QMediaPlayer is not available in some builds (Example: RingQt6 for WebAssembly)
-try
+if isClass(:QMediaPlayer)
 	RingQt_Update_QMediaPlayer_Class()
-catch
-done
+ok
 
 
 func RingQt_Update_QMediaPlayer_Class
