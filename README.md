@@ -27,3 +27,8 @@ The package installs its own Ring2EXE library files
 
 Example: `ring2exe myapp.ring -dist -qt6`
 
+## Self-contained
+
+The package doesn't depend on the `guilib` package (which contains the Qt 5 classes).
+It installs the complete `libraries/guilib` folder (the shared Ring files + the Qt 6 classes)
+and the `load/guilib.ring`, `load/lightguilib.ring` and `load/qtcore.ring` files. Don't install `guilib`, `ringqt` or `ringqtruntime` in the same Ring folder.
